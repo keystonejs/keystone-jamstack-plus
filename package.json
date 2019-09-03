@@ -2,16 +2,20 @@
   "name": "keystone-blog-enrichment",
   "version": "0.0.0",
   "scripts": {
-    "start": "cross-env NODE_ENV=development DISABLE_LOGGING=true keystone dev"
+    "dev": "cross-env NODE_ENV=development DISABLE_LOGGING=true keystone dev",
+    "build": "cross-env NODE_ENV=production keystone build",
+    "start": "cross-env NODE_ENV=production keystone start"
   },
   "private": true,
   "dependencies": {
-    "@keystone-alpha/adapter-mongoose": "latest",
-    "@keystone-alpha/app-admin-ui": "latest",
-    "@keystone-alpha/app-graphql": "latest",
-    "@keystone-alpha/fields": "latest",
-    "@keystone-alpha/keystone": "latest",
-    "@keystone-alpha/app-static": "latest",
-    "cross-env": "^5.2.0"
+    "@keystone-alpha/adapter-mongoose": "^4.0.4",
+    "@keystone-alpha/app-admin-ui": "^5.5.2",
+    "@keystone-alpha/app-graphql": "^7.0.0",
+    "@keystone-alpha/auth-password": "^1.0.0",
+    "@keystone-alpha/fields": "^10.5.0",
+    "@keystone-alpha/keystone": "^13.0.0",
+    "@keystone-alpha/app-static": "^1.1.0",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.1.0"
   }
 }

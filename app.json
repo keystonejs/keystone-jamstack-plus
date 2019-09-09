@@ -11,7 +11,7 @@
     "website"
   ],
   "website": "https://keystonejs.com",
-  "repository": "https://github.com/JedWatson/keystone-starter",
+  "repository": "https://github.com/MadeByMike/keystone-jamstack-plus",
   "logo": "http://keystonejs.com/images/logo-128.png",
   "env": {
     "NODE_ENV": "production",

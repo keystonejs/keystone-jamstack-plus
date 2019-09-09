@@ -4,6 +4,7 @@ const { Keystone } = require("@keystone-alpha/keystone");
 const { PasswordAuthStrategy } = require("@keystone-alpha/auth-password");
 const { KnexAdapter } = require("@keystone-alpha/adapter-knex");
 const { GraphQLApp } = require("@keystone-alpha/app-graphql");
+const { StaticApp } = require("@keystone-alpha/app-static");
 const { AdminUIApp } = require("@keystone-alpha/app-admin-ui");
 const { User } = require("./schema/user");
 const { Comment } = require("./schema/comment");
@@ -29,6 +30,7 @@ module.exports = {
   keystone,
   apps: [
     new GraphQLApp(),
+    new StaticApp({ src: "/static" }),
     new AdminUIApp({
       enableDefaultRoute: true,
       authStrategy: adminAuthStrategy,

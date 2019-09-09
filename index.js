@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const { Keystone } = require("@keystone-alpha/keystone");
 const { PasswordAuthStrategy } = require("@keystone-alpha/auth-password");
-const { MongooseAdapter } = require("@keystone-alpha/adapter-mongoose");
+const { KnexAdapter } = require("@keystone-alpha/adapter-knex");
 const { GraphQLApp } = require("@keystone-alpha/app-graphql");
 const { AdminUIApp } = require("@keystone-alpha/app-admin-ui");
 const { User } = require("./schema/user");
@@ -12,7 +12,7 @@ const initialiseData = require("./initialise-data.js");
 
 const keystone = new Keystone({
   name: "keystone-blog-enrichment",
-  adapter: new MongooseAdapter(process.env.DB_URL),
+  adapter: new KnexAdapter(),
   onConnect: initialiseData
 });
 

@@ -1,4 +1,9 @@
-const { Text, Checkbox, Password } = require("@keystone-alpha/fields");
+const {
+  Text,
+  Checkbox,
+  Password,
+  CalendarDay
+} = require("@keystone-alpha/fields");
 const { isUserAuthenticated } = require("../access-controls");
 
 const User = {
@@ -6,7 +11,8 @@ const User = {
     name: { type: Text },
     email: { type: Text, isUnique: true },
     password: { type: Password },
-    isAdmin: { type: Checkbox }
+    isAdmin: { type: Checkbox },
+    endDate: { type: CalendarDay }
   },
   access: isUserAuthenticated
 };

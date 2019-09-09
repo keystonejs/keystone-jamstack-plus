@@ -31,7 +31,8 @@ const Comment = {
     create: isUserAuthenticated,
     update: isUserAdmin,
     delete: isUserAdmin
-  }
+  },
+  access: true
 };
 
 module.exports = { Comment };

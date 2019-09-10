@@ -30,7 +30,7 @@ module.exports = {
   keystone,
   apps: [
     new GraphQLApp(),
-    new StaticApp({ src: "./static" }),
+    new StaticApp({ path: "/", src: "static" }),
     new AdminUIApp({
       enableDefaultRoute: true,
       authStrategy: adminAuthStrategy,

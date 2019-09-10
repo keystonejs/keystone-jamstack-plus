@@ -1,1 +1,61 @@
-<p>Hello world</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Keystone - JamStack Plus Blog Enrichment</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Deployment successful 🙌</h1>
+    <p>
+      Congratulations! If you see this page, you have successfully deployed your
+      Keystone app on Heroku.
+    </p>
+    <h2 class="sub-heading">What now?</h2>
+    <p>
+      We've created a blog starter template for you. It's configured to display
+      the comments & claps from your Keystone app!
+    </p>
+    <p>Here's all you need to do to get it set up:</p>
+    <h3 class="sub-heading">1. Copy your API URL</h3>
+    <p>
+      Before you deploy your site to Netlify, copy the Keystone API URL below.
+      You'll need to paste that in your site config.
+    </p>
+
+    <div class="copy">
+      <div class="copy-url js-copy-url">loading...</div>
+      <button class="copy-button js-copy-button">Copy</button>
+    </div>
+
+    <h3 class="sub-heading">2. Deploy to Netlify</h3>
+    <p>
+      You can deploy the front end in one click with the conveninent button
+      below.
+    </p>
+
+    <a
+      class="deploy-netlify"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://app.netlify.com/start/deploy?repository=https://github.com/MadeByMike/11ty-starter"
+      >Deploy to Netlify</a
+    >
+
+    <h3 class="sub-heading">3. Clone the repo</h3>
+    <p>
+      Go ahead and clone your netlify site's repo locally. Follow the
+      instructions on the README file to get started!
+    </p>
+
+    <h3 class="sub-heading">4. Copy your API URL path</h3>
+    <p>
+      Open the <code>site-config.js</code> file. There, paste your API URL under
+      the <code>keystoneAPI</code> key.
+    </p>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>

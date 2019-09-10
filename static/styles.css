@@ -1,0 +1,103 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto,
+    sans-serif;
+  margin: 2.5rem;
+  padding: 0;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+h1 {
+  line-height: 1.15;
+}
+
+p {
+  color: #3c3c3c;
+}
+
+code {
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+  color: #4b4b4b;
+  margin: 0 0.25rem;
+  font-weight: 600;
+}
+
+.sub-heading {
+  margin-top: 2.5rem;
+}
+
+/* Copy to clipboard functionality */
+.copy {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 3px;
+  margin-top: 1.5rem;
+  border: solid 2px #e7e7e7;
+}
+
+.copy-url {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-right: none;
+  height: 2.5rem;
+  padding: 0 1rem;
+  vertical-align: middle;
+}
+
+.copy-button {
+  height: 2.5rem;
+  padding: 0 1rem;
+  background: #f2f2f2;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.copy-button:hover {
+  background: #e7e7e7;
+}
+
+.copy-button:focus {
+  outline: none;
+  box-shadow: 0 0 1px 3px rgba(122, 193, 255, 0.45);
+}
+
+.copy-button.success {
+  background: rgba(153, 255, 157, 0.33);
+}
+
+.copy-button.error {
+  background: rgba(255, 77, 0, 0.15);
+}
+
+/* Fancy Netlify button */
+.deploy-netlify {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  background: rebeccapurple;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.15);
+}

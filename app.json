@@ -19,7 +19,8 @@
       "description": "Secret for signing cookies",
       "generator": "secret"
     },
-    "INITIAL_PASSWORD": "keystoneuser"
+    "INITIAL_PASSWORD": "keystoneuser",
+    "INITIAL_USER": "admin@keystonejs.com"
   },
   "addons": ["heroku-postgresql:hobby-dev"]
 }

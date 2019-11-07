@@ -23,19 +23,21 @@ exports.seed = async knex => {
 
     // Lets not hardcode a password :)
     const password = process.env.INITIAL_PASSWORD;
+    const email = process.env.INITIAL_USER;
     // To create users we are using Keystone's executeQuery method
     // rather than knex("User").insert([]) to ensure passwords are
     // correctly hashed and hooks are executed.
 
     await keystone.executeQuery(
-      `mutation initialUser($password: String) {
-            createUser(data: {name: "Admin", email: "admin@keystonejs.com", isAdmin: true, password: $password}) {
+      `mutation initialUser($password: String, $email: String) {
+            createUser(data: {name: "Admin", email: $email, isAdmin: true, password: $password}) {
               id
             }
           }`,
       {
         variables: {
-          password
+          password,
+          email
         }
       }
     );

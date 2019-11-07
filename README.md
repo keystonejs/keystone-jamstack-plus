@@ -4,15 +4,17 @@
 
 This is a [KeystoneJS](https://github.com/keystonejs/keystone) starter-kit that provides an API for a static blog or website. 
 
-It's best paired with [Supermaya](https://github.com/MadeByMike/supermaya) a super fast [Eleventy](https://github.com/11ty/eleventy/) template that will add features such as comments, claps, reading lists and login when the back-end it configured.
+It's best paired with [Supermaya](https://github.com/MadeByMike/supermaya), a super fast [Eleventy](https://github.com/11ty/eleventy/) template that will add features such as comments, claps, reading lists and login when the back-end it configured.
 
-The idea is rather than adding a bunch of third-party services to a static site's build process why not own the data, get rid of the build processes, unify all of your API and build simple custom services.
+The idea is: rather than adding a bunch of third-party services to a static site's build process, why not own the data, get rid of the build processes, unify all of your API and build simple custom services?
 
-If your interested in giving this a try you can deploy all of the services in a few simple steps. First click the Deploy button below to deploy the backend to Heroku. Don't forget to set the initial admin password during the install.
+If you're interested in giving this a try, you can deploy all of the services in a few simple steps. 
+
+First, click on the Deploy button below to deploy the backend to Heroku. Don't forget to set the initial admin password during the install.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/MadeByMike/keystone-blog-enrichment)
 
-After it's deployed click the 'View App' button to launch the welcome page. It has instructions on how to set-up the accompanying front-end with a similar one click button.
+Once it's deployed, click on the 'View App' button to launch the welcome page. It has instructions on how to set-up the accompanying front-end with a similar one click button!
 
 
 ## Running locally?

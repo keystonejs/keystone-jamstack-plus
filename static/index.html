@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Keystone - JamStack Plus Blog Enrichment</title>
+    <link rel="stylesheet" href="./styles.css"/>
+  </head>
+  <body>
+    <h1>Deployment successful 🙌</h1>
+    <p>
+      Congratulations! If you see this page, you have successfully deployed your
+      Keystone Blog Enrichment App.  
+    </p>
+    <h2 class="sub-heading">What now?</h2>
+    <ul>
+      <li>Login to the <a href="/admin">Admin UI</a>.</li>
+
+      <li>
+        Connect Keystone to your blog or website. 
+        </li>
+    </ul>
+    <p>We created an initial user: <code>admin@keystonejs.com</code> with a password: <code>keystoneuser</code> (or whatever you set during deployment). You should update these once you login.</p>
+    <p>We've also created a template for you using one of our favourite static site generators <a href="https://www.11ty.io">Eleventy</a>. It's configured to display comments, reading list, claps and other dynamic features that you can manage in Keystone. Here's what you need to do to set it up:</p>
+    <h3 class="sub-heading">1. Copy your Keystone API URL</h3>
+
+    <div class="copy">
+      <div class="copy-url js-copy-url">loading...</div>
+      <button class="copy-button js-copy-button">Copy</button>
+    </div>
+
+    <h3 class="sub-heading">2. Deploy the front-end to Netlify</h3>
+    <p>
+      Deploy the front-end in one click with this conveninent purple button.
+    </p>
+
+    <a
+      class="deploy-netlify"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://app.netlify.com/start/deploy?repository=https://github.com/MadeByMike/supermaya"
+      >Deploy to Netlify</a
+    >
+    <p>
+      You will be asked to provide the Keystone API URL at the start of the Netlify installation.
+    </p>
+
+    <h3 class="sub-heading">3. Clone the repo</h3>
+    <p>
+      Netlify will create a Github repository for you. You can clone this locally and make changes. Follow the
+      instructions in the README file to get started!
+    </p>
+    <script src="/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "keystone-blog-enrichment",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development DISABLE_LOGGING=true keystone dev",
+    "build": "cross-env NODE_ENV=production keystone build",
+    "start": "cross-env NODE_ENV=production keystone start",
+    "predev": "npm run initialise_db",
+    "prestart": "npm run initialise_db",
+    "initialise_db": "knex seed:run && knex migrate:up"
+  },
+  "private": true,
+  "dependencies": {
+    "@keystonejs/adapter-knex": "^5.0.1",
+    "@keystonejs/app-admin-ui": "^5.0.1",
+    "@keystonejs/app-graphql": "^5.0.0",
+    "@keystonejs/app-static": "^5.0.0",
+    "@keystonejs/auth-password": "^5.0.0",
+    "@keystonejs/fields": "^5.0.2",
+    "@keystonejs/fields-markdown": "^5.0.0",
+    "@keystonejs/keystone": "^5.1.0",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.1.0",
+    "knex": "^0.19.5",
+    "striptags": "^3.1.1"
+  }
+}

@@ -37,7 +37,7 @@ exports.seed = async knex => {
       {
         variables: {
           password,
-          eamil
+          email
         }
       }
     );

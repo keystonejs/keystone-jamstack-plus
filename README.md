@@ -12,7 +12,7 @@ If you're interested in giving this a try, you can deploy all of the services in
 
 First, click on the Deploy button below to deploy the backend to Heroku. Don't forget to set the initial admin password during the install.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/MadeByMike/keystone-blog-enrichment)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/MadeByMike/keystone-jamstack-plus)
 
 Once it's deployed, click on the 'View App' button to launch the welcome page. It has instructions on how to set-up the accompanying front-end with a similar one click button!
 

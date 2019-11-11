@@ -1,4 +1,4 @@
-## Keystone Blog Enrichment
+## Keystone JAMstack Plus starter-kit
 
 ### Getting started
 

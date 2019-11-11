@@ -16,7 +16,7 @@ First, click on the Deploy button below to deploy the backend to Heroku. Don't f
 
 Once it's deployed, click on the 'View App' button to launch the welcome page. It has instructions on how to set-up the accompanying front-end with a similar one click button!
 
-**Note**: This deply a free instance on Heroku which will sleep periodically if not used and can result in a slow API response time after periods of inactivity. You can upgrade to a hobby instance to avoid this.
+**Note**: This will deploy a free instance on Heroku which will sleep periodically if not used and can result in a slow API response time after periods of inactivity. You can upgrade to a hobby instance to avoid this.
 
 
 ## Running locally?

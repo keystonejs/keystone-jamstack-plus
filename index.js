@@ -15,7 +15,7 @@ const knexAdapter = new KnexAdapter();
 const keystone = new Keystone({
   name: "keystone_blog_enrichment",
   adapter: knexAdapter,
-  secureCookies: process.env.NODE_ENV === "production" ? true : false
+  secureCookies: false // We're setting this to false so it works cross-domain and with non-https - You might want to set it to true.
 });
 
 keystone.createList("User", User);
@@ -45,7 +45,7 @@ module.exports = {
   ],
   configureExpress: app => {
     if (process.env.NODE_ENV !== "development") {
-      app.set("trust proxy", true); // This setting is needed for Heroku
+      app.set("trust proxy", "1"); // This setting is needed for Heroku
     }
   },
   knexAdapter

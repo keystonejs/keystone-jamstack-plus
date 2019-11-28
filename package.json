@@ -2,9 +2,9 @@
   "name": "keystone-blog-enrichment",
   "version": "0.0.0",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development DISABLE_LOGGING=true keystone dev",
-    "build": "cross-env NODE_ENV=production keystone build",
-    "start": "cross-env NODE_ENV=production keystone start",
+    "dev": "cross-env NODE_ENV=development DISABLE_LOGGING=true node -r dotenv/config `which keystone` dev",
+    "build": "cross-env NODE_ENV=production node -r dotenv/config `which keystone` build",
+    "start": "cross-env NODE_ENV=production node -r dotenv/config `which keystone` start",
     "predev": "npm run initialise_db",
     "prestart": "npm run initialise_db",
     "initialise_db": "knex seed:run && knex migrate:up"

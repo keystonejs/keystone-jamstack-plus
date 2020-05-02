@@ -11,17 +11,17 @@
   },
   "private": true,
   "dependencies": {
-    "@keystonejs/adapter-knex": "^5.0.1",
-    "@keystonejs/app-admin-ui": "^5.0.1",
-    "@keystonejs/app-graphql": "^5.0.0",
-    "@keystonejs/app-static": "^5.0.0",
-    "@keystonejs/auth-password": "^5.0.0",
-    "@keystonejs/fields": "^5.0.2",
-    "@keystonejs/fields-markdown": "^5.0.0",
-    "@keystonejs/keystone": "^5.1.0",
-    "cross-env": "^5.2.0",
+    "@keystonejs/adapter-knex": "^9.0.3",
+    "@keystonejs/app-admin-ui": "^5.12.0",
+    "@keystonejs/app-graphql": "^5.1.6",
+    "@keystonejs/app-static": "^5.1.2",
+    "@keystonejs/auth-password": "^5.1.6",
+    "@keystonejs/fields": "^9.0.5",
+    "@keystonejs/fields-markdown": "^5.1.9",
+    "@keystonejs/keystone": "^8.1.4",
+    "cross-env": "^7.0.2",
     "dotenv": "^8.1.0",
-    "knex": "^0.19.5",
+    "knex": "^0.21.1",
     "striptags": "^3.1.1"
   }
 }

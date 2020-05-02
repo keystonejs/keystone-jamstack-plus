@@ -5,9 +5,17 @@ const { keystone } = require("../../index");
 const { GraphQLApp } = require("@keystonejs/app-graphql");
 require("dotenv").config();
 
-exports.seed = async knex => {
+exports.seed = async (knex) => {
   // Connect to the database and initialise tables for new lists.
   await keystone.connect();
+
+  // Have tables been created? If not tell the knex adapter to create them
+  const tables = await knex.raw(
+    "SELECT tablename FROM pg_tables WHERE schemaname='public'"
+  );
+  if (tables.rowCount === 0) {
+    await keystone.adapters.KnexAdapter._createTables();
+  }
 
   // Unlike Migrations, Knex does not keep track of which
   // seed files have been run. Since we run this on start, we
@@ -18,7 +26,7 @@ exports.seed = async knex => {
     await keystone.prepare({
       apps: [new GraphQLApp()],
       distDir: "dist",
-      dev: true
+      dev: true,
     });
 
     // Lets not hardcode a password :)
@@ -37,8 +45,8 @@ exports.seed = async knex => {
       {
         variables: {
           password,
-          email
-        }
+          email,
+        },
       }
     );
 
